@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Feed</title>
+
+    <link rel="stylesheet" href="/css/tailwind.css">
+
+    <script src="https://kit.fontawesome.com/95f90e204b.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <!-- React DOM -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <!-- React DOM -->
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <!-- Babel -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+</head>
+
+<body class="bg-gradient-to-r from-violet-500 to-fuchsia-500 pb-8 min-h-screen bg-opacity-50">
+
+    <nav class="w-full h-16 bg-white fixed left-0 top-0 text-right shadow-md py-5 px-8">
+        <a href="/logout"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>
+    </nav>
+
+    <section class="w-3/4 m-auto mt-28 bg-white px-8 py-12 rounded-md bg-opacity-90">
+    
+        <h2 class="text-xl font-bold">Welcome to your newsfeed <%=name%> </h2>
+    
+    </section>
+
+    <input type="hidden" id="user_id" value="<%=user_id %>">
+
+    <section id="app">
+
+    </section>
+
+    <script type="text/babel" src="/js/feed.js"></script>
+
+</body>
+
+</html>

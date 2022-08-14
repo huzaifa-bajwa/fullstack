@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+
+    <link rel="stylesheet" href="/css/tailwind.css">
+
+    <script src="https://kit.fontawesome.com/95f90e204b.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="h-14 bg-gradient-to-r from-violet-500 to-fuchsia-500 min-h-screen">
+    
+    <div class="w-full h-full flex justify-center items-center">
+
+        <form action="/signup" method="POST"class="w-1/2 m-auto bg-white p-12 pt-10 flex flex-col rounded-md bg-opacity-90">
+
+            <h1 class="text-3xl font-bold mb-9 text-center"><i class="fa-solid fa-circle-user px-3"></i>Sign Up Page</h1>
+
+            <input type="text" name="full_name" placeholder="Enter full name" class="px-4 py-2 border w-full mb-1">
+            <input type="email" name="email" placeholder="Enter email address" class="px-4 py-2 border w-full mb-1">
+            <input type="password" name="password" placeholder="Enter password" class="px-4 py-2 border w-full mb-1">
+            <input type="password" name="password2" placeholder="Enter password again" class="px-4 py-2 border w-full mb-1">
+            <input type="submit" value="Sign Up" class="p-2 bg-blue-600 text-white w-full mb-1 cursor-pointer hover:bg-blue-700">
+
+            <a href="/login.html" class="text-blue-600 hover:text-blue-700 underline hover:no-underline text-center mt-2">Already have an account? Click here to login</a>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
