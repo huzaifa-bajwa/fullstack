@@ -9,6 +9,8 @@ var cookieSession = require('cookie-session')
 const {DateTime} = require("luxon")
 require("dotenv").config()
 
+const PORT = 3001
+
 
 app.use(express.static("resources"))
 app.use(bodyParser.urlencoded({ extended: true }))
