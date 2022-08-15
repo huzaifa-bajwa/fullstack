@@ -118,6 +118,6 @@ app.post("/post/delete", authenticateMiddleware, (req,res)=>{
     })
 })
 
-app.listen(3000, ()=>{
+app.listen(process.env.PORT || PORT, ()=>{
     console.log("Server listening on port 3000.")
 })
